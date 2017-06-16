@@ -1,0 +1,45 @@
+\documentclass{beamer}
+\usepackage{graphicx}
+\usepackage{amsmath,amsfonts,amssymb}
+%exclude navigation symbols
+\beamertemplatenavigationsymbolsempty
+%\usetheme[compress]{default}
+\usecolortheme{seagull}
+\usefonttheme{structurebold}
+\expandafter\def\expandafter\insertshorttitle\expandafter{\insertshorttitle\hfill\insertframenumber\,/\,\inserttotalframenumber}
+\title[The RNA Workbench]{The RNA Workbench - reproducible, transparent, and accessible RNA research}
+\author[RNA Workbench Team]{Florian Eggenhofer, Bj\"orn Gr\"uning, B\'{e}r\'{e}nice Batut, J\"org Fallmann, Andrea Bagnacani, Peter F. Stadler, Rolf Backofen and the RNA Workbench Team}
+\institute[Bioinf]{Lehrstuhl Bioinformatik\\University of Freiburg}
+\date{30.06.2017}
+\subject{}
+\keywords{}
+
+\newcommand{\backupbegin}{
+   \newcounter{finalframe}
+   \setcounter{finalframe}{\value{framenumber}}
+}
+\newcommand{\backupend}{
+   \setcounter{framenumber}{\value{finalframe}}
+}
+
+%\newcommand{\TODO}[1]{{\color{red} #1}}
+\defbeamertemplate{footline}{higher page number}
+{%
+  \hfill%
+  \usebeamercolor[fg]{page number in head/foot}%
+  \usebeamerfont{page number in head/foot}%
+  \raisebox{0.2cm}[0pt][0pt]{
+  \insertframenumber\,/\,\inserttotalframenumber\kern1em}%
+}
+\setbeamertemplate{footline}[higher page number]
+\begin{document}
+\frame{
+  \titlepage
+}
+
+\frame{
+  \frametitle{Acknowledgements \& Thanks}
+   \includegraphics[width=1\textwidth]{figures/funding.eps}
+}
+\end{document}
+
