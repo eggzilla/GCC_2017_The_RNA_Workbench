@@ -51,12 +51,12 @@
 
 \frame{
   \frametitle{Tools}
-    \begin{itemize}
-    \item More than 50 RNA bioinformatics tools
-    \item Classical RNA bioinformatics (INFERNAL, ViennaRNA, ..)
-    \item RNA-seq analysis (FuMa, Paralizer, ..)
-    \item Auxiliary tools - Visualisation
-    \end{itemize}  
+  \begin{itemize}
+  \item More than 50 RNA bioinformatics tools
+  \item Classical RNA bioinformatics (INFERNAL, ViennaRNA, ..)
+  \item RNA-seq analysis (FuMa, Paralizer, ..)
+  \item Auxiliary tools - Visualisation
+  \end{itemize}  
 }
 
 
@@ -65,7 +65,8 @@
   \begin{itemize}
   \item Standardized analysis procedures
   \item Based on tools as building blocks
-  \item Can be designed and  shared (ToolShed/myexperiment.org)
+  \item Can be designed and shared (ToolShed/myexperiment.org)
+    %Turning history into workflow / design from scratch
   \end{itemize}    
   % Design figure
 }
@@ -74,9 +75,9 @@
   \frametitle{Workflow - Analysis of non-coding RNAs}
   \begin{itemize}
   \item Test for functional structure via conservation
-  \item Alignment - Analysis ($\micro$ORF) - Homology search
+  \item Alignment - Analysis ($\mu$ORF) - Homology search
   \item Alternative approaches 
-  %Workflow Figure
+    %Workflow Figure
   \end{itemize}  
 }
 
@@ -84,7 +85,7 @@
   \frametitle{RNA-seq analysis: trimming, mapping and read count}
   \begin{itemize}
   \item Test for differential gene expression
-  \item Quality control - Mapping & Annotation - Differential expression
+  \item Quality control - Mapping \& Annotation - Differential expression
   \item Template for customized workflows
   \end{itemize}    
   %Workflow Figure
@@ -92,33 +93,55 @@
 
 \frame{
   \frametitle{Implementation}
- 
+  \begin{itemize}
+  \item Galaxy framework - reproducibility, usability %Accessiblility - webservice
+  \item Docker - deployment, layers (Data, Tours, Documentation) %Workflows, Tools
+    %layer figure?
+  \item Bioconda - version management, dependencies % staying up-to-date
+  \item Continious integration (CI) - testing
+  \end{itemize}    
 }
 
 
 \frame{
   \frametitle{Using the workbench}
- 
+  \begin{itemize}
+  \item docker run -d -p 8080:80 bgruening/galaxy-rna-workbench
+  \item OSX and Windows using the graphical tool Kitematic 
+  \end{itemize}  
 }
 
 \frame{
   \frametitle{Training}
- 
+  \begin{itemize}
+  \item Training sessions (Introduction, HTS data and RNA-seq analyses)
+  \item http://galaxyproject.github.io/training-material
+  \item Galaxy Interactive Tours
+  \end{itemize}  
 }
 
 \frame{
   \frametitle{Visualisation}
- 
+  \begin{itemize}
+  \item General purpose bar chart scatter plot
+  \item Connection to IGV, UCSC genome browsers
+  \item Specific RNA visualisation Dot plot, dot-bracket, tertiary structure (3D)
+  \end{itemize}  
 }
 
 \frame{
   \frametitle{Community}
- 
+  \begin{itemize}
+  \item Tool authors, galaxy developers and users
+  \item Open participation, reward, and inclusion
+  \item Galaxy, BioConda, BioContainers and BioJS
+  \item GitHub, IRC, and Gitter
+  \end{itemize}  
 }
 
 \frame{
   \frametitle{Acknowledgements \& Thanks}
-   \includegraphics[width=1\textwidth]{figures/funding.eps}
+  \includegraphics[width=1\textwidth]{figures/funding.eps}
 }
 \end{document}
 
