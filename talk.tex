@@ -50,17 +50,18 @@
     \only<6>{\hspace{-14pt}\includegraphics[width=0.5\textwidth]{figures/welcome_image.eps}}
   \end{figure}
   \begin{itemize}
-  \item<2-> Comprehensive set of RNA-bioinformatics tools
+  \item<2-> Comprehensive set of \textit{RNA}-bioinformatics tools
   \item<3-> Community - authors and users
   \item<4-> Set of predefined workflows and associated descriptions/training material
-  \item<5-> Easy and stable dissemination via Galaxy and Docker
+  \item<5-> Easy and stable dissemination via Galaxy \onslide<6->{and Docker}
   \end{itemize}
 }
 
 \frame{
   \frametitle{Tools}
+  %Tool logo cloud with categories
   \begin{itemize}
-  \item More than 50 RNA bioinformatics tools
+  \item More than 50 \textit{RNA} bioinformatics tools
   \item Classical RNA bioinformatics (INFERNAL, ViennaRNA, ..)
   \item RNA-seq analysis (FuMa, Paralizer, ..)
   \item Auxiliary tools - Visualisation
@@ -74,7 +75,7 @@
   \item Standardized analysis procedures
   \item Based on tools as building blocks
   \item Can be designed and shared (ToolShed/myexperiment.org)
-  \item Currently 6 workflows
+  \item Currently six workflows %TODO - add workflows
   \end{itemize}
     %Turning history into workflow / design from scratch
   \begin{figure}
@@ -84,24 +85,37 @@
 }
 
 \frame{
-  \frametitle{Workflow - Analysis of non-coding RNAs}
+  \frametitle{Workflow - Analysis of non-coding \textit{RNA}s}
   \begin{itemize}
   \item Test for functional structure via conservation
-  \item Alignment - Analysis ($\mu$ORF) - Homology search
-  \item Alternative approaches 
-    %Workflow Figure
-  \end{itemize}  
+  \end{itemize}
+   \begin{figure}
+     \centering
+    \only<1>{\includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_1.eps}} 
+    \only<2>{\includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_2.eps}}
+    \only<3>{\includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_3.eps}}
+    \only<4>{\includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_4.eps}}
+    \only<5>{\includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_5.eps}}
+    %TODO add tools slide
+  \end{figure}
+  
 }
 
-%% \frame{
-%%   \frametitle{RNA-seq analysis: trimming, mapping and read count}
-%%   \begin{itemize}
-%%   \item Test for differential gene expression
-%%   \item Quality control - Mapping \& Annotation - Differential expression
-%%   \item Template for customized workflows
-%%   \end{itemize}    
-%%   %Workflow Figure
-%% }
+\frame{
+  \frametitle{Workflow - \RNA{} family model construction}
+  \begin{itemize}
+  \item RNA family model construction
+  \end{itemize}
+   \begin{figure}
+     \centering
+    \only<1>{\includegraphics[width=0.8\textwidth]{figures/modelconstruction_workflow_1.eps}}
+    \only<2>{\includegraphics[width=0.8\textwidth]{figures/modelconstruction_workflow_2.eps}}
+    \only<3>{\includegraphics[width=0.8\textwidth]{figures/modelconstruction_workflow_3.eps}}
+    \only<4>{\includegraphics[width=0.8\textwidth]{figures/modelconstruction_workflow_4.eps}}
+  \end{figure}
+  
+}
+
 
 \frame{
   \frametitle{Implementation}
@@ -111,7 +125,30 @@
     %layer figure?
   \item Bioconda - version management, dependencies % staying up-to-date
   \item Continious integration (CI) - testing
-  \end{itemize}    
+  \end{itemize}
+  %using the workbench
+  \begin{itemize}
+  \item docker run -d -p 8080:80 bgruening/galaxy-rna-workbench
+  \item OSX and Windows using the graphical tool Kitematic 
+  \end{itemize}  
+}
+
+\frame{
+  \frametitle{Training}
+  \begin{itemize}
+  \item Training sessions (Introduction, HTS data and \textit{RNA}-seq analyses)
+  \item http://galaxyproject.github.io/training-material
+  \item Galaxy Interactive Tours
+  \end{itemize}  
+}
+
+\frame{
+  \frametitle{Visualisation}
+  \begin{itemize}
+  \item General purpose bar chart scatter plot
+  \item Connection to IGV, UCSC genome browsers
+  \item Specific \textit{RNA} visualisation Dot plot, dot-bracket, tertiary structure (3D)
+  \end{itemize}  
 }
 
 
@@ -123,23 +160,6 @@
   \end{itemize}  
 }
 
-\frame{
-  \frametitle{Training}
-  \begin{itemize}
-  \item Training sessions (Introduction, HTS data and RNA-seq analyses)
-  \item http://galaxyproject.github.io/training-material
-  \item Galaxy Interactive Tours
-  \end{itemize}  
-}
-
-\frame{
-  \frametitle{Visualisation}
-  \begin{itemize}
-  \item General purpose bar chart scatter plot
-  \item Connection to IGV, UCSC genome browsers
-  \item Specific RNA visualisation Dot plot, dot-bracket, tertiary structure (3D)
-  \end{itemize}  
-}
 
 \frame{
   \frametitle{Community}
@@ -151,9 +171,19 @@
   \end{itemize}  
 }
 
+
 \frame{
   \frametitle{Acknowledgements \& Thanks}
   \includegraphics[width=1\textwidth]{figures/funding.eps}
 }
-\end{document}
 
+\frame{
+  \frametitle{RNA-seq analysis: trimming, mapping and read count}
+  \begin{itemize}
+  \item Test for differential gene expression
+  \item Quality control - Mapping \& Annotation - Differential expression
+  \item Template for customized workflows
+  \end{itemize}
+  %Workflow Figure
+}
+\end{document}
