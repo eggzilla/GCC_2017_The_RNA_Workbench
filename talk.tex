@@ -96,6 +96,7 @@
     \only<3>{\includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_3.eps}}
     \only<4>{\includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_4.eps}}
     \only<5>{\includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_5.eps}}
+    \only<6>{\includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_6.eps}}
     %TODO add tools slide
   \end{figure}
   
@@ -108,27 +109,50 @@
   \end{itemize}
    \begin{figure}
      \centering
-    \only<1>{\includegraphics[width=0.8\textwidth]{figures/modelconstruction_Workflow1.eps}}
-    \only<2>{\includegraphics[width=0.8\textwidth]{figures/modelconstruction_Workflow2.eps}}
-    \only<3>{\includegraphics[width=0.8\textwidth]{figures/modelconstruction_Workflow3.eps}}
-    \only<4>{\includegraphics[width=0.8\textwidth]{figures/modelconstruction_Workflow4.eps}}
+    \only<1>{\includegraphics[width=0.7\textwidth]{figures/modelconstruction_Workflow1.eps}}
+    \only<2>{\includegraphics[width=0.7\textwidth]{figures/modelconstruction_Workflow2.eps}}
+    \only<3>{\includegraphics[width=0.7\textwidth]{figures/modelconstruction_Workflow3.eps}}
+    \only<4>{\includegraphics[width=0.7\textwidth]{figures/modelconstruction_Workflow4.eps}}
   \end{figure}
+}
+
+\frame{
+  \frametitle{Community}
+   %Benefits from collaboration of multiple tool authors and galaxy developers
+   %Authors - bigger audiance for tool
+   %Ideas for workflows and best usage of tools
+   %Galaxy developers, better interfaces between tools
+   %Users more tools and functionality, easier feedback and feature requests? 
+   \begin{figure}
+     \centering
+     \only<1>{\includegraphics[width=\textwidth]{figures/ncRNAworkflows_simplified.eps}}
+     \only<2>{\includegraphics[width=\textwidth]{figures/ncRNAworkflows_simplified_1.eps}}
+     \only<3>{\includegraphics[width=\textwidth]{figures/ncRNAworkflows_simplified_2.eps}}
+     \only<4>{\includegraphics[width=\textwidth]{figures/ncRNAworkflows_simplified_3.eps}}
+     \only<5>{\includegraphics[width=\textwidth]{figures/ncRNAworkflows_simplified_4.eps}}
+  \end{figure}
+ %%  \begin{itemize}
+%%   \item Open participation, reward, and inclusion
+%%   \item Galaxy, BioConda, BioContainers and BioJS
+%%   \item GitHub, IRC, and Gitter
+%%   \end{itemize}  
+  %%
 }
 
 
 \frame{
   \frametitle{Implementation}
   \begin{itemize}
-  \item Galaxy framework - reproducibility, usability %Accessiblility - webservice
-  \item Docker - deployment, layers (Data, Tours, Documentation) %Workflows, Tools
+  \item<1-> Galaxy framework - reproducibility, usability %Accessiblility - webservice
+  \item<2-> Docker - deployment, layers (Data, Tours, Documentation) %Workflows, Tools
     %layer figure?
-  \item Bioconda - version management, dependencies % staying up-to-date
-  \item Continious integration (CI) - testing
+  \item<3-> Bioconda - version management, dependencies % staying up-to-date
+  \item<4-> Continious integration (CI) - testing
   \end{itemize}
   %using the workbench
   \begin{itemize}
-  \item docker run -d -p 8080:80 bgruening/galaxy-rna-workbench
-  \item OSX and Windows using the graphical tool Kitematic 
+  \item<5-> docker run -d -p 8080:80 bgruening/galaxy-rna-workbench
+  \item<6-> OSX and Windows using the graphical tool Kitematic 
   \end{itemize}  
 }
 
@@ -158,17 +182,6 @@
 %  \item OSX and Windows using the graphical tool Kitematic 
 %  \end{itemize}  
 %}
-
-
-\frame{
-  \frametitle{Community}
-  \begin{itemize}
-  \item Tool authors, galaxy developers and users
-  \item Open participation, reward, and inclusion
-  \item Galaxy, BioConda, BioContainers and BioJS
-  \item GitHub, IRC, and Gitter
-  \end{itemize}  
-}
 
 
 \frame{
