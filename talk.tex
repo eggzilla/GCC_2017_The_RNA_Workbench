@@ -1,4 +1,4 @@
-\documentclass{beamer}
+\documentclass[t]{beamer}
 \usepackage{graphicx}
 \usepackage{amsmath,amsfonts,amssymb}
 %exclude navigation symbols
@@ -37,23 +37,83 @@
   \titlepage
 }
 
+%% \frame{
+%%   \frametitle{Goals of the RNA Workbench}
+%%   %Differences to previous work
+%%   %\onslide<1->
+%%   \begin{figure}
+%%     \only<1>{\includegraphics[width=0.5\textwidth]{figures/welcome_image_1.eps}}
+%%     \only<2>{\hspace{-3.5pt}\includegraphics[width=0.5\textwidth]{figures/welcome_image_2.eps}}
+%%     \only<3>{\hspace{-7pt}\includegraphics[width=0.5\textwidth]{figures/welcome_image_3.eps}}
+%%     \only<4>{\hspace{-10.5pt}\includegraphics[width=0.5\textwidth]{figures/welcome_image_4.eps}}
+%%     \only<5>{\hspace{-14pt}\includegraphics[width=0.5\textwidth]{figures/welcome_image_5.eps}}
+%%     \only<6>{\hspace{-14pt}\includegraphics[width=0.5\textwidth]{figures/welcome_image.eps}}
+%%   \end{figure}
+%%   \begin{itemize}
+%%   \item<2-> Comprehensive set of \textit{RNA}-bioinformatics tools
+%%   \item<3-> Community - authors and users
+%%   \item<4-> Set of predefined workflows and associated descriptions/training material
+%%   \item<5-> Easy and stable dissemination via Galaxy \onslide<6->{and Docker}
+%%   \end{itemize}
+%% }
+
 \frame{
   \frametitle{Goals of the RNA Workbench}
-  %Differences to previous work
-  %\onslide<1->
   \begin{figure}
-    \only<1>{\includegraphics[width=0.5\textwidth]{figures/welcome_image_1.eps}}
-    \only<2>{\hspace{-3.5pt}\includegraphics[width=0.5\textwidth]{figures/welcome_image_2.eps}}
-    \only<3>{\hspace{-7pt}\includegraphics[width=0.5\textwidth]{figures/welcome_image_3.eps}}
-    \only<4>{\hspace{-10.5pt}\includegraphics[width=0.5\textwidth]{figures/welcome_image_4.eps}}
-    \only<5>{\hspace{-14pt}\includegraphics[width=0.5\textwidth]{figures/welcome_image_5.eps}}
-    \only<6>{\hspace{-14pt}\includegraphics[width=0.5\textwidth]{figures/welcome_image.eps}}
+    \includegraphics[width=0.5\textwidth]{figures/welcome_image_1.eps}
   \end{figure}
   \begin{itemize}
-  \item<2-> Comprehensive set of \textit{RNA}-bioinformatics tools
-  \item<3-> Community - authors and users
-  \item<4-> Set of predefined workflows and associated descriptions/training material
-  \item<5-> Easy and stable dissemination via Galaxy \onslide<6->{and Docker}
+  \item Comprehensive set of \textit{RNA}-bioinformatics tools
+  \end{itemize}
+}
+
+\frame{
+  \frametitle{Goals of the RNA Workbench}
+  \begin{figure}
+    \includegraphics[width=0.5\textwidth]{figures/welcome_image_2.eps}
+  \end{figure}
+  \begin{itemize}
+  \item Comprehensive set of \textit{RNA}-bioinformatics tools
+  \item Community - authors and users
+  \end{itemize}
+}
+
+\frame{
+  \frametitle{Goals of the RNA Workbench}
+  \begin{figure}
+    \includegraphics[width=0.5\textwidth]{figures/welcome_image_3.eps}
+  \end{figure}
+  \begin{itemize}
+  \item Comprehensive set of \textit{RNA}-bioinformatics tools
+  \item Community - authors and users
+  \item Set of predefined workflows and associated descriptions/training material
+  \end{itemize}
+}
+
+\frame{
+  \frametitle{Goals of the RNA Workbench}
+  \begin{figure}
+    \includegraphics[width=0.5\textwidth]{figures/welcome_image_4.eps}
+  \end{figure}
+  \begin{itemize}
+  \item Comprehensive set of \textit{RNA}-bioinformatics tools
+  \item Community - authors and users
+  \item Set of predefined workflows and associated descriptions/training material
+  \item Easy and stable dissemination via Galaxy 
+  \end{itemize}
+}
+
+
+\frame{
+  \frametitle{Goals of the RNA Workbench}
+  \begin{figure}
+    \includegraphics[width=0.5\textwidth]{figures/welcome_image.eps}
+  \end{figure}
+  \begin{itemize}
+  \item Comprehensive set of \textit{RNA}-bioinformatics tools
+  \item Community - authors and users
+  \item Set of predefined workflows and associated descriptions/training material
+  \item Easy and stable dissemination via Galaxy and Docker
   \end{itemize}
 }
 
@@ -84,6 +144,23 @@
   \end{figure}
 }
 
+%% \frame{
+%%   \frametitle{Workflow - Analysis of non-coding \textit{RNA}s}
+%%   \begin{itemize}
+%%   \item Test for functional structure via conservation
+%%   \end{itemize}
+%%    \begin{figure}
+%%      \centering
+%%     \only<1>{\includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_1.eps}} 
+%%     \only<2>{\includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_2.eps}}
+%%     \only<3>{\includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_3.eps}}
+%%     \only<4>{\includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_4.eps}}
+%%     \only<5>{\includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_5.eps}}
+%%     \only<6>{\includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_6.eps}}
+%%   \end{figure}
+  
+%% }
+
 \frame{
   \frametitle{Workflow - Analysis of non-coding \textit{RNA}s}
   \begin{itemize}
@@ -91,15 +168,90 @@
   \end{itemize}
    \begin{figure}
      \centering
-    \only<1>{\includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_1.eps}} 
-    \only<2>{\includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_2.eps}}
-    \only<3>{\includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_3.eps}}
-    \only<4>{\includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_4.eps}}
-    \only<5>{\includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_5.eps}}
-    \only<6>{\includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_6.eps}}
-    %TODO add tools slide
+     \includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_1.eps} 
+  \end{figure}  
+}
+
+\frame{
+  \frametitle{Workflow - Analysis of non-coding \textit{RNA}s}
+  \begin{itemize}
+  \item Test for functional structure via conservation
+  \end{itemize}
+   \begin{figure}
+     \centering
+     \includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_2.eps}
   \end{figure}
   
+}
+
+\frame{
+  \frametitle{Workflow - Analysis of non-coding \textit{RNA}s}
+  \begin{itemize}
+  \item Test for functional structure via conservation
+  \end{itemize}
+   \begin{figure}
+     \centering
+     \includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_3.eps}
+  \end{figure}
+  
+}
+
+\frame{
+  \frametitle{Workflow - Analysis of non-coding \textit{RNA}s}
+  \begin{itemize}
+  \item Test for functional structure via conservation
+  \end{itemize}
+   \begin{figure}
+     \centering
+     \includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_4.eps}
+  \end{figure}
+}
+
+\frame{
+  \frametitle{Workflow - Analysis of non-coding \textit{RNA}s}
+  \begin{itemize}
+  \item Test for functional structure via conservation
+  \end{itemize}
+   \begin{figure}
+     \centering
+     \includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_5.eps}
+  \end{figure}  
+}
+
+\frame{
+  \frametitle{Workflow - Analysis of non-coding \textit{RNA}s}
+  \begin{itemize}
+  \item Test for functional structure via conservation
+  \end{itemize}
+   \begin{figure}
+     \centering
+     \includegraphics[width=0.8\textwidth]{figures/ncRNA_general_Workflow_6.eps}
+  \end{figure}  
+}
+
+%% \frame{
+%%   \frametitle{Workflow - \textit{RNA} family model construction}
+%%   \begin{itemize}
+%%   \item RNA family model construction
+%%   \end{itemize}
+%%    \begin{figure}
+%%      \centering
+%%     \only<1>{\includegraphics[width=0.7\textwidth]{figures/modelconstruction_Workflow1.eps}}
+%%     \only<2>{\includegraphics[width=0.7\textwidth]{figures/modelconstruction_Workflow2.eps}}
+%%     \only<3>{\includegraphics[width=0.7\textwidth]{figures/modelconstruction_Workflow3.eps}}
+%%     \only<4>{\includegraphics[width=0.7\textwidth]{figures/modelconstruction_Workflow4.eps}}
+%%   \end{figure}
+%% }
+
+\frame{
+  \frametitle{Workflow - \textit{RNA} family model construction}
+  \begin{itemize}
+  \item RNA family model construction
+  \end{itemize}
+   \begin{figure}
+     \centering
+     \includegraphics[width=0.7\textwidth]{figures/modelconstruction_Workflow1.eps}
+  \end{figure}
 }
 
 \frame{
@@ -109,28 +261,80 @@
   \end{itemize}
    \begin{figure}
      \centering
-    \only<1>{\includegraphics[width=0.7\textwidth]{figures/modelconstruction_Workflow1.eps}}
-    \only<2>{\includegraphics[width=0.7\textwidth]{figures/modelconstruction_Workflow2.eps}}
-    \only<3>{\includegraphics[width=0.7\textwidth]{figures/modelconstruction_Workflow3.eps}}
-    \only<4>{\includegraphics[width=0.7\textwidth]{figures/modelconstruction_Workflow4.eps}}
+     \includegraphics[width=0.7\textwidth]{figures/modelconstruction_Workflow2.eps}
+  \end{figure}
+}
+
+\frame{
+  \frametitle{Workflow - \textit{RNA} family model construction}
+  \begin{itemize}
+  \item RNA family model construction
+  \end{itemize}
+   \begin{figure}
+     \centering
+     \includegraphics[width=0.7\textwidth]{figures/modelconstruction_Workflow3.eps}
+  \end{figure}
+}
+
+\frame{
+  \frametitle{Workflow - \textit{RNA} family model construction}
+  \begin{itemize}
+  \item RNA family model construction
+  \end{itemize}
+   \begin{figure}
+     \centering
+     \includegraphics[width=0.7\textwidth]{figures/modelconstruction_Workflow4.eps}
   \end{figure}
 }
 
 \frame{
   \frametitle{Community}
+   \begin{figure}
+     \centering
+     \includegraphics[width=\textwidth]{figures/ncRNAworkflows_simplified.eps}
+  \end{figure}
+}
+
+\frame{
+  \frametitle{Community}
+   \begin{figure}
+     \centering
+     \includegraphics[width=\textwidth]{figures/ncRNAworkflows_simplified_1.eps}
+  \end{figure}
+}
+
+\frame{
+  \frametitle{Community}
+   \begin{figure}
+     \centering
+     \includegraphics[width=\textwidth]{figures/ncRNAworkflows_simplified_2.eps}
+  \end{figure}
+}
+
+\frame{
+  \frametitle{Community}
+   \begin{figure}
+     \centering
+     \includegraphics[width=\textwidth]{figures/ncRNAworkflows_simplified_3.eps}
+  \end{figure}
+}
+
+\frame{
+  \frametitle{Community}
+   \begin{figure}
+     \centering
+     \includegraphics[width=\textwidth]{figures/ncRNAworkflows_simplified_4.eps}
+  \end{figure}
+}
+
+
+\frame{
+  \frametitle{Community II}
    %Benefits from collaboration of multiple tool authors and galaxy developers
    %Authors - bigger audiance for tool
    %Ideas for workflows and best usage of tools
    %Galaxy developers, better interfaces between tools
    %Users more tools and functionality, easier feedback and feature requests? 
-   \begin{figure}
-     \centering
-     \only<1>{\includegraphics[width=\textwidth]{figures/ncRNAworkflows_simplified.eps}}
-     \only<2>{\includegraphics[width=\textwidth]{figures/ncRNAworkflows_simplified_1.eps}}
-     \only<3>{\includegraphics[width=\textwidth]{figures/ncRNAworkflows_simplified_2.eps}}
-     \only<4>{\includegraphics[width=\textwidth]{figures/ncRNAworkflows_simplified_3.eps}}
-     \only<5>{\includegraphics[width=\textwidth]{figures/ncRNAworkflows_simplified_4.eps}}
-  \end{figure}
  %%  \begin{itemize}
 %%   \item Open participation, reward, and inclusion
 %%   \item Galaxy, BioConda, BioContainers and BioJS
