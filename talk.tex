@@ -130,8 +130,9 @@
   \begin{itemize}
   \item<1-> More than 50 \textit{RNA} bioinformatics tools
   \item<2-> Classical \textit{RNA} bioinformatics (INFERNAL, ViennaRNA, ..)
-  \item<3-> RNA-seq analysis (FuMa, Paralizer, ..)
-  \item<4-> Included visualisation 
+  \item<3-> \textit{RNA}-seq analysis (FuMa, Paralizer, ..)
+  \item<4-> Included \textit{RNA} visualization
+   \vspace{0.5cm}
    \begin{figure}
     \centering
     \includegraphics[width=0.7\textwidth]{figures/visualization.eps}
@@ -342,12 +343,25 @@
    \begin{figure}
      \centering
      \includegraphics[width=\textwidth]{figures/ncRNAworkflows_simplified_4.eps}
-  \end{figure}
 }
 
 
 \frame{
   \frametitle{Community II}
+  %Personal observation
+  Benefits from collaboration and integration
+  \onslide<2->{Tool authors}
+  \begin{itemize}
+  \item<3-> Ensure correct application of tool
+  \item<4-> Identify missing interfaces between tools
+  \item<5-> New ideas for workflows
+  \end{itemize}
+  \onslide<6->{Galaxy developers}
+  \begin{itemize}
+  \item<7-> Simpler workflow construction
+  \item<8-> Authors keep tools updated
+  \end{itemize}
+  \onslide<9->{Open participation, reward, and inclusion}
    %Benefits from collaboration of multiple tool authors and galaxy developers
    %Authors - bigger audiance for tool
    %Ideas for workflows and best usage of tools
@@ -363,7 +377,7 @@
 
 
 \frame{
-  \frametitle{Implementation}
+  \frametitle{Implementation \& Usage}
   \begin{itemize}
   \item<1-> Galaxy framework - reproducibility, usability %Accessiblility - webservice
   \item<2-> Docker - deployment, layers (Data, Tours, Documentation) %Workflows, Tools
@@ -371,10 +385,10 @@
   \item<3-> Bioconda - version management, dependencies % staying up-to-date
   \item<4-> Continious integration (CI) - testing
   \end{itemize}
-  %using the workbench
+  \onslide<5->{Using the workbench}
   \begin{itemize}
-  \item<5-> docker run -d -p 8080:80 bgruening/galaxy-rna-workbench
-  \item<6-> OSX and Windows using the graphical tool Kitematic 
+  \item<6-> docker run -d -p 8080:80 bgruening/galaxy-rna-workbench
+  \item<7-> OSX and Windows using the graphical tool Kitematic 
   \end{itemize}  
 }
 
