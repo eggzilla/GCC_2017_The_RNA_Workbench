@@ -256,7 +256,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.6398134"
-     inkscape:cx="182.90034"
+     inkscape:cx="-18.037157"
      inkscape:cy="205.54921"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -278,7 +278,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -812,7 +812,7 @@
        id="g30438"
        transform="translate(76.819445,76.31839)">
       <flowRoot
-         transform="matrix(0.09883056,0,0,0.09883056,26.834001,120.59497)"
+         transform="matrix(0.09883056,0,0,0.09883056,26.834001,128.59467)"
          style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;text-align:end;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          id="flowRoot7283-0-2-9-4-5-2-1-8-5"
          xml:space="preserve"><flowRegion
@@ -824,7 +824,7 @@
              width="609.08759"
              id="rect7287-96-2-1-6-81-8-7-4-8" /></flowRegion><flowPara
            id="flowPara7562-5-31-2-9-9-5-4"
-           style="font-size:50px;line-height:1.25">QUALITY</flowPara></flowRoot>      <image
+           style="font-size:50px;line-height:1.25">INTERPRETATION</flowPara></flowRoot>      <image
          width="6.4008751"
          height="6.4008751"
          preserveAspectRatio="none"
