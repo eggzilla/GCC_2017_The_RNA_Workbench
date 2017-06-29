@@ -343,25 +343,26 @@
    \begin{figure}
      \centering
      \includegraphics[width=\textwidth]{figures/ncRNAworkflows_simplified_4.eps}
+   \end{figure}
 }
 
 
 \frame{
   \frametitle{Community II}
   %Personal observation
-  Benefits from collaboration and integration
-  \onslide<2->{Tool authors}
+  Benefits from collaboration and integration\\
+  \onslide<2->\textbf{Tool authors}
   \begin{itemize}
   \item<3-> Ensure correct application of tool
   \item<4-> Identify missing interfaces between tools
   \item<5-> New ideas for workflows
   \end{itemize}
-  \onslide<6->{Galaxy developers}
+  \onslide<6->\textbf{Galaxy developers}
   \begin{itemize}
   \item<7-> Simpler workflow construction
   \item<8-> Authors keep tools updated
   \end{itemize}
-  \onslide<9->{Open participation, reward, and inclusion}
+  \onslide<9->Open participation, reward, and inclusion
    %Benefits from collaboration of multiple tool authors and galaxy developers
    %Authors - bigger audiance for tool
    %Ideas for workflows and best usage of tools
@@ -377,29 +378,38 @@
 
 
 \frame{
-  \frametitle{Implementation \& Usage}
+  \frametitle{Training \& Usage}
+  \onslide<2->\textbf{Training}
   \begin{itemize}
-  \item<1-> Galaxy framework - reproducibility, usability %Accessiblility - webservice
-  \item<2-> Docker - deployment, layers (Data, Tours, Documentation) %Workflows, Tools
-    %layer figure?
-  \item<3-> Bioconda - version management, dependencies % staying up-to-date
-  \item<4-> Continious integration (CI) - testing
+    \item<3-> Training sessions (Introduction, HTS data and \textit{RNA}-seq analyses)
+    \item<4-> http://galaxyproject.github.io/training-material
+    \item<5-> Galaxy Interactive Tours
   \end{itemize}
-  \onslide<5->{Using the workbench}
+  \onslide<6->\textbf{Using the workbench}
   \begin{itemize}
-  \item<6-> docker run -d -p 8080:80 bgruening/galaxy-rna-workbench
-  \item<7-> OSX and Windows using the graphical tool Kitematic 
+  \item<7-> docker run -d -p 8080:80 bgruening/galaxy-rna-workbench
+  \item<8-> OSX and Windows using the graphical tool Kitematic 
   \end{itemize}  
 }
 
-\frame{
-  \frametitle{Training}
-  \begin{itemize}
-  \item Training sessions (Introduction, HTS data and \textit{RNA}-seq analyses)
-  \item http://galaxyproject.github.io/training-material
-  \item Galaxy Interactive Tours
-  \end{itemize}  
-}
+%% \frame{
+%%   \frametitle{Training \&Usage}
+%%   \begin{itemize}
+%%   \item Training sessions (Introduction, HTS data and \textit{RNA}-seq analyses)
+%%   \item http://galaxyproject.github.io/training-material
+%%   \item Galaxy Interactive Tours
+%%   \end{itemize}  
+%% }
+
+  %% \frametitle{Implementation \& Usage}
+  %% \begin{itemize}
+  %% \item<1-> Galaxy framework - reproducibility, usability %Accessiblility - webservice
+  %% \item<2-> Docker - deployment, layers (Data, Tours, Documentation) %Workflows, Tools
+  %%   %layer figure?
+  %% \item<3-> Bioconda - version management, dependencies % staying up-to-date
+  %% \item<4-> Continious integration (CI) - testing
+  %% \end{itemize}
+
 
 %% \frame{
 %%   \frametitle{Visualisation}
